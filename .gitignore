@@ -1,0 +1,5 @@
+obj/
+bin/
+Temp/
+Library\ScriptAssemblies\
+Library\*.log
