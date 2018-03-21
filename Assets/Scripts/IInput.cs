@@ -1,4 +1,6 @@
 ﻿public interface IInput
 {
-    float Vertical();
+    float Horizontal { get; }
+
+    float Vertical { get; }
 }

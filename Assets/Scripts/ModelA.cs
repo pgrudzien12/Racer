@@ -55,7 +55,7 @@ public class ModelA : MonoBehaviour
         if (Mathf.Approximately(0, speed))
             speed = 0;
 
-        var alpha = Input.GetAxis("Horizontal") * maxTurnAngle;
+        var alpha = input.Horizontal * maxTurnAngle;
         var qTurn = Quaternion.AngleAxis(alpha, Vector3.back);
 
         var carVector = DriveDirection * carLength;
@@ -99,7 +99,7 @@ public class ModelA : MonoBehaviour
 
     private float AccelerateForce()
     {
-        var accelerateForce = input.Vertical();
+        var accelerateForce = input.Vertical;
         if (accelerateForce * speed < 0)
             accelerateForce *= braekForceMultiplier;
 

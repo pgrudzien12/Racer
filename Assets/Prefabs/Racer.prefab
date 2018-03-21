@@ -21,7 +21,6 @@ GameObject:
   - component: {fileID: 4715530213769692}
   - component: {fileID: 70782715673673904}
   - component: {fileID: 50962872269291718}
-  - component: {fileID: 114184389705871458}
   m_Layer: 2
   m_Name: Racer
   m_TagString: Respawn
@@ -149,20 +148,3 @@ CapsuleCollider2D:
   m_Offset: {x: 0, y: -0.5}
   m_Size: {x: 0.5, y: 1}
   m_Direction: 0
---- !u!114 &114184389705871458
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1229267351515862}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 07a00be7fd7ed5648a986204bc7ebb9f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  carLength: 0.5
-  maxTurnAngle: 30
-  maxSpeed: 0.15
-  carMass: 10
-  resistaanceForce: 0.3
-  braekForceMultiplier: 4

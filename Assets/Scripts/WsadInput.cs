@@ -9,8 +9,19 @@ public class WsadInput : IInput
     {
     }
 
-    public float Vertical()
+    public float Horizontal
     {
-        return Input.GetAxis("Vertical");
+        get
+        {
+            return Input.GetAxis("Horizontal");
+        }
+    }
+
+    float IInput.Vertical
+    {
+        get
+        {
+            return Input.GetAxis("Vertical");
+        }
     }
 }
