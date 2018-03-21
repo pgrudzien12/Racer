@@ -72,7 +72,7 @@ public class ModelA : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D coll)
     {
-        Debug.Log("colision 2d with " + coll.gameObject.name);
+        speed /= 2.0f;
     }
 
     private Vector3 DriveDirection
